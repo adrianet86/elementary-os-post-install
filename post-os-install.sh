@@ -51,6 +51,7 @@ rm google-chrome*.deb
 
 # firefox
 sudo apt-get install firefox
+# TODO: download firefox developer edition
 
 # Copyq
 sudo add-apt-repository ppa:hluk/copyq
@@ -138,9 +139,11 @@ multiplank -e
 # And to disable:
 # multiplank -d
 
-
-cd ~/Downloads;
-
+# As I always have /home in a different HD partition, steps below are for a fresh installation
+# cd ~;
+# mkdir software;
+# Download software
+# cd ~/Downloads;
 # Postman
 # https://www.getpostman.com/apps
 # wget https://app.getpostman.com/app/download/linux64?_ga=2.229117084.1404834430.1535957793-2051387000.1535957793
@@ -151,13 +154,12 @@ cd ~/Downloads;
 
 # Clean-up System Elementary
 sudo apt purge epiphany-browser epiphany-browser-data #browser
-sudo apt-get purge noise
+sudo apt-get purge noise # Music
 sudo apt-get purge scratch-text-editor #text-editor
-sudo apt-get purge modemmanager
-sudo apt-get purge geary #email
-sudo apt-get purge pantheon-mail #email
+sudo apt-get purge modemmanager # ni puta idea
+# sudo apt-get purge pantheon-mail # email
 sudo apt-get purge pantheon-terminal #terminal
-sudo apt-get purge audience
+# sudo apt-get purge audience
 sudo apt-get purge maya-calendar #calendar
 
 sudo apt autoremove
