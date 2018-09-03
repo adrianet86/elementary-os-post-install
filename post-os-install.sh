@@ -52,6 +52,11 @@ rm google-chrome*.deb
 # firefox
 sudo apt-get install firefox
 
+# Copyq
+sudo add-apt-repository ppa:hluk/copyq
+sudo apt update
+sudo apt install copyq
+
 #Install Spotify
 # 1. Add the Spotify repository signing keys to be able to verify downloaded packages
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
@@ -118,6 +123,12 @@ sudo usermod -a -G docker $USER
 sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 # 2. Run this command to download the latest version of Docker Compose:
 sudo chmod +x /usr/local/bin/docker-compose
+
+# Atom
+wget https://github.com/atom/atom/releases/download/v1.17.2/atom-amd64.deb
+sudo apt install ./atom-*.deb
+rm atom-*.deb # free up space
+
 
 cd ~/Downloads;
 

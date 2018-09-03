@@ -1,0 +1,14 @@
+# 180º
+http://api.rtve.es/api/programas/22270/audios.rss
+
+# Hoy empieza todo
+http://api.rtve.es/api/programas/59010/audios.rss
+
+# Nadie sabe nada
+https://recursosweb.prisaradio.com/podcasts/488.xml
+
+# Oh my lol! La vida moderna
+https://recursosweb.prisaradio.com/podcasts/571.xml
+
+# Turbo 3
+http://api.rtve.es/api/programas/60890/audios.rss
