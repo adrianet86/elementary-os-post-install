@@ -129,6 +129,15 @@ wget https://github.com/atom/atom/releases/download/v1.17.2/atom-amd64.deb
 sudo apt install ./atom-*.deb
 rm atom-*.deb # free up space
 
+# Multiplank for many monitors
+sudo apt-add-repository ppa:heathbar/multiplank
+sudo apt-get update
+sudo apt-get install multiplank
+# Once installed, enable multiplank by issuing the following command:
+multiplank -e
+# And to disable:
+# multiplank -d
+
 
 cd ~/Downloads;
 
