@@ -143,11 +143,11 @@ cd ~/Downloads;
 
 # Postman
 # https://www.getpostman.com/apps
-wget https://app.getpostman.com/app/download/linux64?_ga=2.229117084.1404834430.1535957793-2051387000.1535957793
+# wget https://app.getpostman.com/app/download/linux64?_ga=2.229117084.1404834430.1535957793-2051387000.1535957793
 
 # Phpstorm
 # https://www.jetbrains.com/phpstorm/download/#section=linux
-wget https://www.jetbrains.com/phpstorm/download/download-thanks.html?platform=linux
+# wget https://www.jetbrains.com/phpstorm/download/download-thanks.html?platform=linux
 
 # Clean-up System Elementary
 sudo apt purge epiphany-browser epiphany-browser-data #browser
