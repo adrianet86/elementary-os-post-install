@@ -34,9 +34,9 @@ sudo apt install elementary-tweaks
 # essential programs
 # sudo apt install g++ libtool automake htop gparted vlc browser-plugin-vlc firefox inkscape shutter steam filezilla k4dirstat speedcrunch
 # Java
-# sudo apt install openjdk-8-jre openjdk-8-jdk
+sudo apt install openjdk-9-jre openjdk-9-jdk
 # Multimedia Codecs
-# sudo apt install ubuntu-restricted-extras libavcodec-extra ffmpeg
+sudo apt install ubuntu-restricted-extras libavcodec-extra ffmpeg
 
 # Google Chrome
 sudo apt install libxss1 libappindicator1 libindicator7
@@ -126,7 +126,7 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 
 # Atom
-wget https://github.com/atom/atom/releases/download/v1.17.2/atom-amd64.deb
+wget https://atom.io/download/deb
 sudo apt install ./atom-*.deb
 rm atom-*.deb # free up space
 
@@ -152,6 +152,10 @@ multiplank -e
 # https://www.jetbrains.com/phpstorm/download/#section=linux
 # wget https://www.jetbrains.com/phpstorm/download/download-thanks.html?platform=linux
 
+
+# Acestream
+https://www.cnx-software.com/2018/04/15/how-to-install-and-use-acestream-easily-in-ubuntu-mint-linux/
+
 # Clean-up System Elementary
 sudo apt purge epiphany-browser epiphany-browser-data #browser
 sudo apt-get purge noise # Music
@@ -160,7 +164,7 @@ sudo apt-get purge modemmanager # ni puta idea
 # sudo apt-get purge pantheon-mail # email
 sudo apt-get purge pantheon-terminal #terminal
 # sudo apt-get purge audience
-sudo apt-get purge maya-calendar #calendar
+# sudo apt-get purge maya-calendar #calendar
 
 sudo apt autoremove
 sudo apt autoclean
