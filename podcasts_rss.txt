@@ -5,7 +5,7 @@ http://api.rtve.es/api/programas/22270/audios.rss
 http://api.rtve.es/api/programas/59010/audios.rss
 
 # Nadie sabe nada
-https://recursosweb.prisaradio.com/podcasts/488.xml
+http://fapi-top.prisasd.com/podcast/playser/nadie_sabe_nada/itunestfp/podcast.xml
 
 # Oh my lol! La vida moderna
 https://recursosweb.prisaradio.com/podcasts/571.xml
