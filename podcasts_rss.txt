@@ -15,3 +15,12 @@ http://api.rtve.es/api/programas/60890/audios.rss
 
 # Na na na
 http://api.rtve.es/api/programas/77850/audios.rss
+
+# Top Gus extra
+http://www.rtve.es/api/programas/115370/audios.rss
+
+# Siglo 21
+http://www.rtve.es/api/programas/2082/audios.rss
+
+# Aquí hay dragones
+http://fapi-top.prisasd.com/podcast/podium/aqui_hay_dragones.xml
