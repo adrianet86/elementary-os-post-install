@@ -126,9 +126,11 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 
 # Atom
-wget https://atom.io/download/deb
-sudo apt install ./atom-*.deb
-rm atom-*.deb # free up space
+wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
+sudo apt-get update
+sudo apt-get install atom
+
 
 # Multiplank for many monitors
 sudo apt-add-repository ppa:heathbar/multiplank
