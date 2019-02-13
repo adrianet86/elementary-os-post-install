@@ -158,8 +158,7 @@ sudo mv /etc/xdg/autostart/at-spi-dbus-bus.desktop /etc/xdg/autostart/at-spi-dbu
 # Second option
 sudo vi /etc/systemd/system.conf
 
-# EDIT OPTION: DefaultTimeoutStartSec=90s 
-
+# UNCOMMENT AND EDIT OPTIONS: DefaultTimeoutStartSec=10s && DefaultTimeoutStopSec=10s
 
 # Acestream
 https://www.cnx-software.com/2018/04/15/how-to-install-and-use-acestream-easily-in-ubuntu-mint-linux/
