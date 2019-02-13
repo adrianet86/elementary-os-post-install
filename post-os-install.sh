@@ -154,14 +154,19 @@ multiplank -e
 
 # Fix bug long time to load desktop
 sudo mv /etc/xdg/autostart/at-spi-dbus-bus.desktop /etc/xdg/autostart/at-spi-dbus-bus.disabled
-
 # Second option
 sudo vi /etc/systemd/system.conf
-
 # UNCOMMENT AND EDIT OPTIONS: DefaultTimeoutStartSec=10s && DefaultTimeoutStopSec=10s
+
+
+# FIX HDMI OUTPUT SETTINGS
+sudo apt install pavucontrol
 
 # Acestream
 https://www.cnx-software.com/2018/04/15/how-to-install-and-use-acestream-easily-in-ubuntu-mint-linux/
+
+# Wingpanel
+http://entornosgnulinux.com/2018/08/15/como-instalar-wingpanel-indicator-ayatana-en-elementary-os-juno/
 
 # Clean-up System Elementary
 sudo apt purge epiphany-browser epiphany-browser-data #browser
