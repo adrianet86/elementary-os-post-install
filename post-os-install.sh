@@ -152,6 +152,14 @@ multiplank -e
 # https://www.jetbrains.com/phpstorm/download/#section=linux
 # wget https://www.jetbrains.com/phpstorm/download/download-thanks.html?platform=linux
 
+# Fix bug long time to load desktop
+sudo mv /etc/xdg/autostart/at-spi-dbus-bus.desktop /etc/xdg/autostart/at-spi-dbus-bus.disabled
+
+# Second option
+sudo vi /etc/systemd/system.conf
+
+# EDIT OPTION: DefaultTimeoutStartSec=90s 
+
 
 # Acestream
 https://www.cnx-software.com/2018/04/15/how-to-install-and-use-acestream-easily-in-ubuntu-mint-linux/
