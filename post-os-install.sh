@@ -160,6 +160,18 @@ sudo mv /etc/xdg/autostart/at-spi-dbus-bus.desktop /etc/xdg/autostart/at-spi-dbu
 sudo vi /etc/systemd/system.conf
 # UNCOMMENT AND EDIT OPTIONS: DefaultTimeoutStartSec=10s && DefaultTimeoutStopSec=10s
 
+# FIX VIDEO FREEZES
+#sudo vi /etc/X11/xorg.conf.d/20-intel.conf
+sudo vi /usr/share/X11/xorg.conf.d/20-intel.conf
+
+Section "Device"
+    Identifier "Intel Graphics"
+    Driver "intel"
+    Option "AccelMethod" "sna"
+    Option "TearFree" "true"
+    Option "DRI" "3"
+EndSection
+
 
 # FIX HDMI OUTPUT SETTINGS
 sudo apt install pavucontrol
@@ -169,6 +181,11 @@ https://www.cnx-software.com/2018/04/15/how-to-install-and-use-acestream-easily-
 
 # Wingpanel
 http://entornosgnulinux.com/2018/08/15/como-instalar-wingpanel-indicator-ayatana-en-elementary-os-juno/
+
+# Preload, improves performance
+sudo apt-get install preload
+
+sudo apt-get install gnome-shell-extensions
 
 # Clean-up System Elementary
 sudo apt purge epiphany-browser epiphany-browser-data #browser
@@ -182,3 +199,14 @@ sudo apt-get purge pantheon-terminal #terminal
 
 sudo apt autoremove
 sudo apt autoclean
+
+# ENPASS
+sudo -i
+echo "deb https://apt.enpass.io/ stable main" > \
+  /etc/apt/sources.list.d/enpass.list
+
+wget -O - https://apt.enpass.io/keys/enpass-linux.key | apt-key add -
+
+apt-get update
+apt-get install enpass
+exit
